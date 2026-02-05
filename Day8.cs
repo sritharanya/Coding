@@ -54,9 +54,9 @@ class Solution {
                {
                    zerocnt--;
                }
-               j++;
+               j++;//j pointer moves forward but leaves 0 count once found don't want to look to leftbehind 0 anymore 
            }
-               int curlength=i-j+1;
+               int curlength=i-j+1; // the length of current subarray with i to j is calculated i must be bigger
         
         result=Math.Max(result,curlength);
 /*
